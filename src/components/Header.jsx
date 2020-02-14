@@ -3,12 +3,12 @@ import './Header.css';
 
 function Header(){
   var headerStyles = {
-    backgroundImage: "url('winebarrels.jpg')",
+    backgroundImage: "url('winepour.jpg')",
     height: "300px",
     backgroundAttachment: "fixed",
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     padding: "32px 0px",
     marginBottom: "32px",
     display: "flex",

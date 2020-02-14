@@ -6,7 +6,7 @@ function Navbar(){
   var navbarStyles = {
     height: "60px",
     color: "#FFFCE8",
-    backgroundColor: "#00004d",
+    backgroundColor: "black",
     padding: "0 16px",
     display: "flex",
     justifyContent: "space-between",

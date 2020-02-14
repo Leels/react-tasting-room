@@ -10,7 +10,8 @@ function Bottle(props){
     height: "200px",
     overflow: "auto",
     backgroundColor: "white",
-    color: "black"
+    color: "black",
+    alignItems: "center"
   }
   return (
     <div>

@@ -63,12 +63,28 @@ const availableWines = [
      about: "Red, Light, Perfumed, Pair with chicken and turkey."
    },
    {
+     name: "Pieropan Calvarino Soave Classico 2015",
+     image: White,
+     origin: "Veneto, Italy",
+     grape: "Soave Blend",
+     cost: "$31",
+     about: "White, Green, Flinty, Pair with white fish."
+   },
+   {
      name: "Finca Flichman 'Dedicado' Gran Corte 2015",
      image: Red,
      origin: "Uco Valley, Argentina",
      grape: "Cabernet - Malbec - Syrah",
      cost: "$35",
      about: "Red, Bold, Structured, Pair with beef and venison."
+   },
+   {
+     name: "Schramsberg Blanc de Blancs 2016",
+     image: Sparkling,
+     origin: "North Coast, California",
+     grape: "Chardonnay",
+     cost: "$36",
+     about: "Sparkling, Complex, Traditional, Pair with crab and lobster."
    },
    {
      name: "Daterra Camino de la Frontera Tinto 2017",
@@ -85,6 +101,14 @@ const availableWines = [
      grape: "Pinot Noir",
      cost: "$38",
      about: "Red, Light, Perfumed, Pair with chicken and turkey."
+   },
+   {
+     name: "De Morgenzon Reserve Chenin Blanc 2017",
+     image: White,
+     origin: "Stellenbosch, South Africa",
+     grape: "Chenin Blanc",
+     cost: "$40",
+     about: "White, Buttery, Complex, Pair with cheddar and gruyere."
    },
    {
      name: "Daniel Bouland Morgon Les Delys 2018",
