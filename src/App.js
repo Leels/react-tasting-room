@@ -20,8 +20,8 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/About' component={About} />
         <Route exact path='/Events' component={Events} />
-        <Route exact path='/WineCellar' component={WineCellar} />
-        <Route exact path='/TastingRoom' component={TastingRoom} />
+        <Route exact path='/winecellar' component={WineCellar} />
+        <Route exact path='/tastingroom' component={TastingRoom} />
         </Switch>
         <Footer />
     </div>

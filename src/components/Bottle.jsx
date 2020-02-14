@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import './Bottle.css';
 
-function Produce(props){
+function Bottle(props){
   var bottleStyles = {
     padding: "0 16px 16px 16px",
     margin: "16px",
@@ -25,7 +25,7 @@ function Produce(props){
   );
 }
 
-Produce.propTypes = {
+Bottle.propTypes = {
   name: PropTypes.string,
   origin: PropTypes.string,
   grape: PropTypes.string,

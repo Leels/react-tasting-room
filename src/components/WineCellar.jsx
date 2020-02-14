@@ -1,6 +1,5 @@
 import React from "react";
 import Bottle from './Bottle';
-import './AvailableProduce.css';
 
 const availableWines = [
    {
@@ -149,7 +148,7 @@ const availableWines = [
    }
 ];
 
-function AvailableProduce(){
+function WineCellar(){
   var layoutStyles = {
     display: "flex",
     flexWrap: "wrap",
