@@ -1,0 +1,19 @@
+h4, h3 {
+  color: #697A21;
+  font-size: 150%;
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+}
+
+.bottle::-webkit-scrollbar {
+  width: 1em;
+}
+
+.bottle::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.bottle::-webkit-scrollbar-thumb {
+  background-color: #697A21;
+  outline: 1px solid #3E363F;
+}
