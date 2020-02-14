@@ -1,8 +1,15 @@
-h4, h3 {
-  color: #697A21;
-  /* font-size: 150%; */
+h3, h4 {
+  /* color: #fff5cc; */
+  /* font-size: 110%; */
   text-align: center;
   font-family: 'Noto Serif', serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
 
 .bottle::-webkit-scrollbar {
@@ -14,6 +21,6 @@ h4, h3 {
 }
 
 .bottle::-webkit-scrollbar-thumb {
-  background-color: #697A21;
+  background-color: #00004d;
   outline: 1px solid #3E363F;
 }

@@ -9,17 +9,18 @@ function Bottle(props){
     width: "200px",
     height: "200px",
     overflow: "auto",
-    backgroundColor: "#3E363F",
-    color: "#FFFCE8"
+    backgroundColor: "white",
+    color: "black"
   }
   return (
     <div>
-      <h4>{props.name}</h4>
-      <h3>{props.origin}</h3>
-      <h3>{props.grape}</h3>
-      <h3>{props.cost}</h3>
-      <div style={bottleStyles} className="bottle">
-        {props.about.map(item => <p>{item}</p>)}
+    <div style={bottleStyles} className="bottle">
+      <h3>{props.name}</h3>
+      <img src={props.image} />
+      <h4>{props.origin}</h4>
+      <h4>{props.grape}</h4>
+      <h4>{props.cost}</h4>
+      <h4>{props.about}</h4>
       </div>
     </div>
   );
@@ -27,6 +28,7 @@ function Bottle(props){
 
 Bottle.propTypes = {
   name: PropTypes.string,
+  image: PropTypes.object,
   origin: PropTypes.string,
   grape: PropTypes.string,
   cost: PropTypes.string,
