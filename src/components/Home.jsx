@@ -1,9 +1,11 @@
 import React from "react";
+import './Home.css';
+
 
 function Body(){
   return (
     <div>
-      <p>This is the body.</p>
+      <p>This is home.</p>
     </div>
   );
 }

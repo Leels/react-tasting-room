@@ -21,11 +21,14 @@ function Navbar(){
   }
   return (
     <div style={navbarStyles}>
-      <p style={titleStyles}>Tasting Room</p>
-      <div style={linkStyles}>
-        <Link to="/">About</Link>
-        <a href="/">Contact</a>
-      </div>
+    <p style={titleStyles}>Tasting Room</p>
+    <div style={linkStyles}>
+    <Link to="/Home">Home</Link>
+    <Link to="/About">About</Link>
+    <Link to="/Events">Events</Link>
+    <Link to="/WineCellar">Wine Cellar</Link>
+    <Link to="/TastingRoom">Tasting Room</Link>
+    </div>
     </div>
   );
 }
