@@ -10,10 +10,12 @@ function Navbar(){
     padding: "0 16px",
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center"
+    alignItems: "center",
+    fontFamily: "'Open Sans', sans-serif"
+
   }
   var titleStyles = {
-    fontFamily: "'Noto Serif', serif",
+    fontFamily: "'Cinzel', serif",
     fontWeight: "bold",
   }
   var linkStyles = {
@@ -21,7 +23,7 @@ function Navbar(){
   }
   return (
     <div style={navbarStyles}>
-    <p style={titleStyles}>Tasting Room</p>
+    <p style={titleStyles}>The Tasting Room</p>
     <div style={linkStyles}>
     <Link to="/Home">Home</Link>
     <Link to="/About">About</Link>

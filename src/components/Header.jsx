@@ -4,7 +4,7 @@ import './Header.css';
 function Header(){
   var headerStyles = {
     backgroundImage: "url('winepour.jpg')",
-    height: "300px",
+    height: "400px",
     backgroundAttachment: "fixed",
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
@@ -17,7 +17,7 @@ function Header(){
   }
   return (
     <div style={headerStyles}>
-      <h1>Tasting Room</h1>
+      <h1>The Tasting Room</h1>
     </div>
   );
 }

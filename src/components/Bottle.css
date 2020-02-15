@@ -21,6 +21,6 @@ img {
 }
 
 .bottle::-webkit-scrollbar-thumb {
-  background-color: #00004d;
-  outline: 1px solid #3E363F;
+  background-color: #e6e6e6;
+  outline: 1px solid white;
 }

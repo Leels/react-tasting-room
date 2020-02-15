@@ -133,7 +133,10 @@ function WineCellar(){
     display: "flex",
     flexWrap: "wrap",
   }
+
   return (
+    <div>
+    <h1>In Our Cellar</h1>
     <div style={layoutStyles}>
       {availableWines.map((wine, index) =>
         <Bottle
@@ -145,6 +148,7 @@ function WineCellar(){
         about={wine.about}
         key={index}/>
       )}
+    </div>
     </div>
   );
 }
