@@ -22,6 +22,7 @@ function Bottle(props){
       <h4>{props.grape}</h4>
       <h4>{props.cost}</h4>
       <h4>{props.about}</h4>
+      <h4>{props.pairing}</h4>
       </div>
     </div>
   );
@@ -31,9 +32,9 @@ Bottle.propTypes = {
   name: PropTypes.string,
   image: PropTypes.object,
   origin: PropTypes.string,
-  grape: PropTypes.string,
   cost: PropTypes.string,
-  about: PropTypes.array
+  about: PropTypes.array,
+  pairing: PropTypes.string
 
 }
 

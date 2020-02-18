@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Navbar(){
   var navbarStyles = {
     height: "60px",
-    color: "#FFFCE8",
+    color: "#f2f2f2",
     backgroundColor: "black",
     padding: "0 16px",
     display: "flex",
