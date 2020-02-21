@@ -19,7 +19,7 @@ function Header(){
     <div style={headerStyles}>
       <h1>The Tasting Room</h1>
       <div class="variation-b">
-        <button class="suit_and_tie">21+ to Enter</button>
+        <button class="suit_and_tie">must be 21+ to enter</button>
       </div>
     </div>
   );

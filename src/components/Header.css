@@ -60,11 +60,7 @@ p {
   height: 100px;
   width: 100%;
   text-align: center;
-  padding-top: 50px;
-}
-
-.variation-b {
-  background-color: black;
+  padding-top: 70px;
 }
 
 .variation-b .suit_and_tie {
