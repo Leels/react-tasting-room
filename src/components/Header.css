@@ -1,15 +1,18 @@
 h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 4em;
+  /* font-family: 'Tangerine'; */
+  /* font-family: 'Stalemate'; */
+  font-family: 'Charmonman';
+  /* font-family: 'Parisienne'; */
+  font-size: 5em;
   font-weight: 700;
   text-align: center;
   margin: 0;
   color: #f2f2f2;
   text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
 p {

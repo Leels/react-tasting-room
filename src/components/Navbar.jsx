@@ -11,11 +11,11 @@ function Navbar(){
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    fontFamily: "'Open Sans', sans-serif"
+    fontFamily: "Raleway"
 
   }
   var titleStyles = {
-    fontFamily: "'Cinzel', serif",
+    fontFamily: "Charmonman",
     fontWeight: "bold",
   }
   var linkStyles = {
