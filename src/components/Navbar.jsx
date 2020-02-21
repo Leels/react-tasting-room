@@ -23,7 +23,7 @@ function Navbar(){
   }
   return (
     <div style={navbarStyles}>
-    <p style={titleStyles}>The Tasting Room</p>
+    <h2 style={titleStyles}>The Tasting Room</h2>
     <div style={linkStyles}>
     <Link to="/Home">Home</Link>
     <Link to="/About">About</Link>

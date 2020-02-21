@@ -4,8 +4,10 @@ import './Bottle.css';
 
 function Bottle(props){
   var bottleStyles = {
-    padding: "0 16px 16px 16px",
+    padding: "0px 20px 20px 20px",
     margin: "16px",
+    // marginLeft: "auto",
+    // marginRight: "auto",
     width: "200px",
     height: "200px",
     overflow: "auto",

@@ -132,11 +132,17 @@ function WineCellar(){
   var layoutStyles = {
     display: "flex",
     flexWrap: "wrap",
+    marginBottom: "140px",
+    alignItems: "center",
+    justifyContent: "center"
   }
+
   var title = {
     textAlign: "center",
-    fontSize: "3rem"
+    fontSize: "3rem",
+    textDecoration: "underline"
   }
+
   return (
     <div>
     <h2 style={title}>In Our Cellar</h2>
