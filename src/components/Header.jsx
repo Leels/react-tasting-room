@@ -4,7 +4,7 @@ import './Header.css';
 function Header(){
   var headerStyles = {
     backgroundImage: "url('winepour.jpg')",
-    height: "80vh",
+    height: "75vh",
     backgroundAttachment: "fixed",
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",

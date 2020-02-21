@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar(){
   var navbarStyles = {
-    height: "60px",
+    height: "7vh",
     color: "#f2f2f2",
     backgroundColor: "black",
     padding: "0 16px",
@@ -27,9 +27,7 @@ function Navbar(){
     <div style={linkStyles}>
     <Link to="/Home">Home</Link>
     <Link to="/About">About</Link>
-    <Link to="/Events">Events</Link>
     <Link to="/WineCellar">Wine Cellar</Link>
-    <Link to="/TastingRoom">Tasting Room</Link>
     </div>
     </div>
   );
