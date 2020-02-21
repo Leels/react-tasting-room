@@ -18,6 +18,9 @@ function Header(){
   return (
     <div style={headerStyles}>
       <h1>The Tasting Room</h1>
+      <div class="variation-b">
+        <button class="suit_and_tie">21+ to Enter</button>
+      </div>
     </div>
   );
 }
