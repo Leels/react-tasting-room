@@ -2,9 +2,10 @@
 ## By: Lela Smith
 
 ### Description
-#### This application will display basic information about a Tasting Room, including which wines are currently open for tasting in the Tasting Room, what events are occurring and which bottles are available for sale. 
+#### This application will display basic information about a Tasting Room, including which wines are currently open for tasting in the Tasting Room, what events are occurring and which bottles are available for sale.
 
 ### Specifications
+!(https://raw.githubusercontent.com/Leels/react-tasting-room/master/src/components/images/Screen%20Shot%202020-02-21%20at%2010.01.36%20AM.png)
 
 ### Known Bugs
 #### None
