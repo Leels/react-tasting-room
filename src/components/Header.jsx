@@ -1,7 +1,10 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+import EnterSiteControl from './EnterSiteControl';
+import WineCellar from './WineCellar';
 import './Header.css';
 
-function Header(){
+function Header(props){
   var headerStyles = {
     backgroundImage: "url('winepour.jpg')",
     height: "75vh",
@@ -19,10 +22,14 @@ function Header(){
     <div style={headerStyles}>
       <h1>The Tasting Room</h1>
       <div class="variation-b">
-        <button class="suit_and_tie">must be 21+ to enter</button>
+        <button class="suit_and_tie" onClick={props.onTroubleshootingConfirmation}>must be 21+ to enter</button>
       </div>
     </div>
   );
 }
+
+Header.propTypes = {
+  onTroubleshootingConfirmation: PropTypes.func
+};
 
 export default Header;
