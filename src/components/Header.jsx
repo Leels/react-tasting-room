@@ -5,7 +5,7 @@ import WineCellar from './WineCellar';
 import './Header.css';
 
 function Header(props){
-  var headerStyles = {
+  let headerStyles = {
     backgroundImage: "url('winepour.jpg')",
     height: "75vh",
     backgroundAttachment: "fixed",

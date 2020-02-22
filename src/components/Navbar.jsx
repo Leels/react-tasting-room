@@ -25,9 +25,8 @@ function Navbar(){
     <div style={navbarStyles}>
     <h2 style={titleStyles}>The Tasting Room</h2>
     <div style={linkStyles}>
-    <Link to="/WineCellar">Home</Link>
+    <Link to="/">Home</Link>
     <Link to="/About">About</Link>
-    <Link to="/WineCellar">Wine Cellar</Link>
     </div>
     </div>
   );
