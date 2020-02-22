@@ -16,9 +16,8 @@ function App() {
     <div className="App">
         <Navbar />
         <Switch>
-        <Route exact path='/' component={Header} />
+        <Route exact path='/' component={EnterSiteControl} />
         <Route exact path='/About' component={About} />
-        <Route exact path='/WineCellar' component={EnterSiteControl} />
         <Route component={Error404} />
         </Switch>
         <Footer />
