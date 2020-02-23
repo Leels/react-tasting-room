@@ -3,20 +3,14 @@ import WineCellar from './WineCellar';
 import Menu from './Menu';
 import Tastings from './Tastings';
 
-class MenuControl extends React.Component {
+class TastingsControl extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      winesVisibleOnPage: false,
       tastingsVisibleOnPage: false
     };
-    this.handleWinesTroubleshootingConfirmation = this.handleWinesTroubleshootingConfirmation.bind(this);
     this.handleTastingsTroubleshootingConfirmation = this.handleTastingsTroubleshootingConfirmation.bind(this);
- }
-
- handleWinesTroubleshootingConfirmation(){
-   this.setState({winesVisibleOnPage: true});
  }
 
  handleTastingsTroubleshootingConfirmation(){
@@ -25,12 +19,10 @@ class MenuControl extends React.Component {
 
  render(){
    let currentlyVisibleContent = null;
-   if (this.state.winesVisibleOnPage){
-     currentlyVisibleContent = <WineCellar />;
-   } else if (this.state.tastingsVisibleOnPage){
+    if (this.state.tastingsVisibleOnPage){
      currentlyVisibleContent = <Tastings />;
     } else {
-      currentlyVisibleContent = <Menu onWinesTroubleshootingConfirmation={this.handleWinesTroubleshootingConfirmation}/>;
+      currentlyVisibleContent = <Menu onTastingsTroubleshootingConfirmation={this.handleTastingsTroubleshootingConfirmation}/>;
     }
     return (
       <div>
@@ -40,4 +32,4 @@ class MenuControl extends React.Component {
   }
 }
 
-export default MenuControl;
+export default TastingsControl;

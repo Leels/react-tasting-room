@@ -8,6 +8,7 @@ import About from './components/About';
 import WineCellar from './components/WineCellar';
 import Error404 from './components/Error404';
 import EnterSiteControl from './components/EnterSiteControl';
+import MenuControl from './components/MenuControl';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
@@ -17,7 +18,9 @@ function App() {
     <div className="App">
         <Navbar />
         <Switch>
-        <Route exact path='/' component={EnterSiteControl} />
+        <Route exact path='/' component={Header} />
+        <Route exact path='/About' component={About} />
+        <Route exact path='/Menu' component={MenuControl} />
         <Route exact path='/About' component={About} />
         <Route component={Error404} />
         </Switch>

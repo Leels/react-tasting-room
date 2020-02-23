@@ -1,5 +1,6 @@
 import React from "react";
 import Bottle from './Bottle';
+import Menu from './Menu';
 import Red from "./images/Red.png";
 import Rose from "./images/Rose.png";
 import White from "./images/White.png";
@@ -10,7 +11,7 @@ const availableWines = [
       name: "Domaine Eric et Joel Durand Cornas Empreintes- 2016",
       image: Red,
       origin: "Rhone, France",
-      cost: "$42",
+      cost: "15/42",
       about: "Red, Syrah, Bold, Structured, Pair with lamb.",
       pairing: "Pair with lamb."
    },
@@ -18,7 +19,7 @@ const availableWines = [
      name: "Nino Franco Prosecco di Conegliano-Valdobbiadene Superiore Brut DOCG",
      image: Sparkling,
      origin: "Veneto, Italy",
-     cost: "$17",
+     cost: "8/17",
      about: "Sparkling, Glera (Prosecco), Fresh, Youthful",
      pairing: "Pair with pork."
    },
@@ -26,7 +27,7 @@ const availableWines = [
      name: "Domaine Laurent Cognard Le Vieux Chateaux- 2016",
      image: Red,
      origin: "Montagny Premier Cru, France",
-     cost: "$40",
+     cost: "14/40",
      about: "Red, Chianti Blend, Savory, Classic",
      pairing: "Pair with lamb."
    },
@@ -34,7 +35,7 @@ const availableWines = [
      name: "Fattoria di Petroio 'Poggio ai Grilli' Chianti Classico Gran Selezione DOCG 2015",
      image: Red,
      origin: "Tuscany, Italy",
-     cost: "$42",
+     cost: "14/42",
      about: "Red, Syrah, Bold, Structured",
      pairing: "Pair with lamb."
    },
@@ -42,7 +43,7 @@ const availableWines = [
      name: "Muller-Catoir Haardter Burgergarten 'Breumel in den Mauern' Riesling Auslese 2015",
      image: White,
      origin: "Pfalz, Germany",
-     cost: "$39",
+     cost: "13/39",
      about: "Dessert, Riesling, Lush, Balanced",
      pairing: "Pair with fruit based desserts."
    },
@@ -50,7 +51,7 @@ const availableWines = [
      name: "La Rioja Alta S.A. Gran Reserva 904, Rioja DOCa 2010",
      image: Red,
      origin: "Rioja, Spain",
-     cost: "$57",
+     cost: "18/57",
      about: "Red, Rioja Red Blend, Savory, Classic",
      pairing: "Pair with lamb."
    },
@@ -58,7 +59,7 @@ const availableWines = [
      name: "Chateau Miraval Cotes de Provence Rose 2017",
      origin: "Provence, France",
      image: Rose,
-     cost: "$16",
+     cost: "8/16",
      about: "Rose, Cinsaut - Grenache, Crisp, Dry",
      pairing: "Pair with salads and green vegetables."
    },
@@ -66,7 +67,7 @@ const availableWines = [
      name: "Boedecker Cellars Willamette Valley Pinot Noir 2015",
      image: Red,
      origin: "Willamette Valley, Oregon",
-     cost: "$21",
+     cost: "9/21",
      about: "Red, Pinot Noir, Light, Perfumed",
      pairing: "Pair with chicken and turkey."
    },
@@ -74,7 +75,7 @@ const availableWines = [
      name: "Pieropan Calvarino Soave Classico 2015",
      image: White,
      origin: "Veneto, Italy",
-     cost: "$31",
+     cost: "10/31",
      about: "White, Soave Blend, Green, Flinty",
      pairing: "Pair with white fish."
    },
@@ -82,7 +83,7 @@ const availableWines = [
      name: "Finca Flichman 'Dedicado' Gran Corte 2015",
      image: Red,
      origin: "Uco Valley, Argentina",
-     cost: "$35",
+     cost: "11/35",
      about: "Red, Cabernet - Malbec - Syrah, Bold, Structured",
      pairing: "Pair with beef and venison."
    },
@@ -90,7 +91,7 @@ const availableWines = [
      name: "Schramsberg Blanc de Blancs 2016",
      image: Sparkling,
      origin: "North Coast, California",
-     cost: "$36",
+     cost: "11/36",
      about: "Sparkling, Chardonnay, Complex, Traditional",
      pairing: "Pair with crab and lobster."
    },
@@ -98,7 +99,7 @@ const availableWines = [
      name: "Daterra Camino de la Frontera Tinto 2017",
      image: Red,
      origin: "Arribes, Spain",
-     cost: "$31",
+     cost: "10/31",
      about: "Red, Rare Red Blend, Rich, Intense",
      pairing: "Pair with lamb."
    },
@@ -106,7 +107,7 @@ const availableWines = [
      name: "Patricia Green Cellars 'Estate Vineyard - Etzel Block' Pinot Noir 2017",
      image: Red,
      origin: "Willamette Valley, Oregon",
-     cost: "$38",
+     cost: "12/38",
      about: "Red, Pinot Noir, Light, Perfumed",
      pairing: "Pair with chicken and turkey."
    },
@@ -114,7 +115,7 @@ const availableWines = [
      name: "De Morgenzon Reserve Chenin Blanc 2017",
      image: White,
      origin: "Stellenbosch, South Africa",
-     cost: "$40",
+     cost: "13/40",
      about: "White, Chenin Blanc, Buttery, Complex",
      pairing: "Pair with cheddar and gruyere."
    },
@@ -122,7 +123,7 @@ const availableWines = [
      name: "Daniel Bouland Morgon Les Delys 2018",
      origin: "Beaujolais, France",
      image: Red,
-     cost: "$39",
+     cost: "13/39",
      about: "Red, Gamay, Light, Perfumed",
      pairing: "Pair with chicken and turkey."
    }
@@ -145,6 +146,7 @@ function WineCellar(){
 
   return (
     <div>
+    <Menu />
     <h2 style={title}>In Our Cellar</h2>
     <div style={layoutStyles}>
       {availableWines.map((wine, index) =>

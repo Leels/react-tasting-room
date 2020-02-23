@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header'
+import Header from './Header';
 import Menu from './Menu';
 
 class EnterSiteControl extends React.Component {
@@ -7,18 +7,18 @@ class EnterSiteControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      infoVisibleOnPage: false
     };
     this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
  }
 
  handleTroubleshootingConfirmation(){
-   this.setState({formVisibleOnPage: true});
+   this.setState({infoVisibleOnPage: true});
  }
 
  render(){
    let currentlyVisibleContent = null;
-   if (this.state.formVisibleOnPage){
+   if (this.state.infoVisibleOnPage){
      currentlyVisibleContent = <Menu />;
     } else {
       currentlyVisibleContent = <Header onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;

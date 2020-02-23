@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import EnterSiteControl from './EnterSiteControl';
 import WineCellar from './WineCellar';
 import './Header.css';
 
-function Header(){
+function HeaderTwo(){
   let headerStyles = {
     backgroundImage: "url('winepour.jpg')",
-    height: "75vh",
+    height: "70vh",
     backgroundAttachment: "fixed",
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
@@ -20,16 +19,25 @@ function Header(){
     flexDirection: "column"
   }
 
+    let scrollText = {
+      color: "white",
+      textAlign: "center",
+      fontStyle: "italic",
+      paddingTop: "45px"
+    }
+
   return (
     <div style={headerStyles}>
       <h1>The Tasting Room</h1>
-      <div class="variation-b">
-        <Link to="/Menu">
-        <button class="suit_and_tie">must be 21+ to enter</button>
-        </Link>
+      <div style={scrollText}>
+        <h3>scroll down to view our menu</h3>
       </div>
     </div>
   );
 }
 
-export default Header;
+// Header2.propTypes = {
+//   onTroubleshootingConfirmation: PropTypes.func
+// };
+
+export default HeaderTwo;

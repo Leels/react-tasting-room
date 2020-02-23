@@ -22,34 +22,22 @@ p {
 
 /*button */
 .suit_and_tie {
-  /* font */
   color: black;
   font-size: 20px;
   font-family: Raleway;
-
-  /* remove blue underline */
   text-decoration: none;
-
-  /* border */
   border: 2px solid black;
   border-radius: 20px;
-
-  /* transitions */
   transition-duration: .2s;
   -webkit-transition-duration: .2s;
   -moz-transition-duration: .2s;
-
-  /* other */
   background-color: white;
   padding: 4px 30px;
 }
 
 .suit_and_tie:hover {
-  /* update text color and background color */
   color:white;
   background-color:transparent;
-
-   /* transitions */
   transition-duration: .2s;
   -webkit-transition-duration: .11s;
   -moz-transition-duration: .2s;
@@ -64,24 +52,14 @@ p {
 }
 
 .variation-b .suit_and_tie {
-  /* font */
   color: white;
-
-  /* border */
   border: 2px solid white;
-
-  /* other */
   background-color: black;
 }
 
 .variation-b .suit_and_tie:hover {
-  /* font */
   color: black;
-
-  /* border */
   border: 2px solid black;
-
-  /* other */
   background-color: white;
 }
 
