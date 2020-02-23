@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header'
-import WineCellar from './WineCellar';
+import Menu from './Menu';
 
 class EnterSiteControl extends React.Component {
 
@@ -19,7 +19,7 @@ class EnterSiteControl extends React.Component {
  render(){
    let currentlyVisibleContent = null;
    if (this.state.formVisibleOnPage){
-     currentlyVisibleContent = <WineCellar />;
+     currentlyVisibleContent = <Menu />;
     } else {
       currentlyVisibleContent = <Header onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
     }
