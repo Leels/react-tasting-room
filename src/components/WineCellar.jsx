@@ -5,6 +5,8 @@ import Red from "./images/Red.png";
 import Rose from "./images/Rose.png";
 import White from "./images/White.png";
 import Sparkling from "./images/Sparkling.png";
+import PropTypes from 'prop-types';
+import HeaderTwo from './HeaderTwo';
 
 const availableWines = [
    {
@@ -129,8 +131,8 @@ const availableWines = [
    }
 ];
 
-function WineCellar(){
-  var layoutStyles = {
+function WineCellar(props){
+  const layoutStyles = {
     display: "flex",
     flexWrap: "wrap",
     marginBottom: "140px",
@@ -138,7 +140,7 @@ function WineCellar(){
     justifyContent: "center"
   }
 
-  var title = {
+  const title = {
     textAlign: "center",
     fontSize: "3rem",
     textDecoration: "underline"
@@ -146,6 +148,7 @@ function WineCellar(){
 
   return (
     <div>
+    <HeaderTwo />
     <Menu />
     <h2 style={title}>In Our Cellar</h2>
     <div style={layoutStyles}>
@@ -163,5 +166,9 @@ function WineCellar(){
     </div>
   );
 }
+
+WineCellar.propTypes = {
+  onWinesTroubleshootingConfirmation: PropTypes.func
+};
 
 export default WineCellar;

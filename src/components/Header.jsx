@@ -5,8 +5,8 @@ import EnterSiteControl from './EnterSiteControl';
 import WineCellar from './WineCellar';
 import './Header.css';
 
-function Header(){
-  let headerStyles = {
+function Header(props){
+  const headerStyles = {
     backgroundImage: "url('winepour.jpg')",
     height: "75vh",
     backgroundAttachment: "fixed",
@@ -24,12 +24,14 @@ function Header(){
     <div style={headerStyles}>
       <h1>The Tasting Room</h1>
       <div class="variation-b">
-        <Link to="/Menu">
-        <button class="suit_and_tie">must be 21+ to enter</button>
-        </Link>
+        <button class="suit_and_tie" onClick={props.onTroubleshootingConfirmation}>must be 21+ to enter</button>
       </div>
     </div>
   );
 }
+
+Header.propTypes = {
+  onTroubleshootingConfirmation: PropTypes.func
+};
 
 export default Header;

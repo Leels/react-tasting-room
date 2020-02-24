@@ -5,7 +5,7 @@ import WineCellar from './WineCellar';
 import './Header.css';
 
 function HeaderTwo(){
-  let headerStyles = {
+  const headerStyles = {
     backgroundImage: "url('winepour.jpg')",
     height: "70vh",
     backgroundAttachment: "fixed",
@@ -19,11 +19,11 @@ function HeaderTwo(){
     flexDirection: "column"
   }
 
-    let scrollText = {
+    const scrollText = {
       color: "white",
       textAlign: "center",
       fontStyle: "italic",
-      paddingTop: "45px"
+      paddingTop: "70px"
     }
 
   return (

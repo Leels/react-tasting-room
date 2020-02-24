@@ -2,13 +2,13 @@ import React from "react";
 import './Footer.css';
 
 function Footer(){
-  var addressText = {
+  const addressText = {
     color: "#666666",
     fontFamily: "Raleway",
     textAlign: "center",
     paddingTop: "1rem"
   }
-  var copyrightText = {
+  const copyrightText = {
     color: "#4d4d4d",
     fontFamily: "Raleway",
     textAlign: "center",

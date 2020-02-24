@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 
 function Navbar(){
-  var navbarStyles = {
+  const navbarStyles = {
     height: "7vh",
     color: "#f2f2f2",
     backgroundColor: "black",
@@ -14,7 +14,7 @@ function Navbar(){
     fontFamily: "Raleway"
 
   }
-  var titleStyles = {
+  const titleStyles = {
     fontFamily: "Charmonman",
     fontWeight: "bold",
   }

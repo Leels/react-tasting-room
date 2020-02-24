@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Menu from './Menu';
+import Tastings from './Tastings';
 
 class EnterSiteControl extends React.Component {
 
@@ -19,7 +20,7 @@ class EnterSiteControl extends React.Component {
  render(){
    let currentlyVisibleContent = null;
    if (this.state.infoVisibleOnPage){
-     currentlyVisibleContent = <Menu />;
+     currentlyVisibleContent = <Tastings />;
     } else {
       currentlyVisibleContent = <Header onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
     }
@@ -30,5 +31,6 @@ class EnterSiteControl extends React.Component {
     );
   }
 }
+
 
 export default EnterSiteControl;

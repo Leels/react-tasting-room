@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Bottle.css';
 
 function Bottle(props){
-  var bottleStyles = {
+  const bottleStyles = {
     padding: "0px 20px 20px 20px",
     margin: "16px",
     // marginLeft: "auto",

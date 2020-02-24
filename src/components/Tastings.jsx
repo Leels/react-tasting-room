@@ -1,18 +1,21 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import Menu from './Menu';
+import HeaderTwo from './HeaderTwo';
 
 
 function Tastings(){
-  var tastingsStyles = {
+  const tastingsStyles = {
     alignItems: "center",
+    minHeight: "100vh"
   }
 
   return (
     <div>
+    <HeaderTwo />
     <Menu />
     <div style={tastingsStyles}>
-    <h3>Tastings are 1 oz. each</h3>
+    <h2>Tastings are 1 oz. each</h2>
     <h3>8 Wines</h3>
     <h4>23</h4>
     <h3>6 Wines</h3>
@@ -27,5 +30,6 @@ function Tastings(){
     </div>
   );
 }
+
 
 export default Tastings;
