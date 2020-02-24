@@ -10,12 +10,20 @@ function Tastings(){
     minHeight: "100vh"
   }
 
+  const title = {
+    textAlign: "center",
+    fontSize: "1rem",
+    paddingBottom: ".5rem"
+  }
+
   return (
     <div>
     <HeaderTwo />
     <Menu />
     <div style={tastingsStyles}>
+    <div style={title}>
     <h2>Tastings are 1 oz. each</h2>
+    </div>
     <h3>8 Wines</h3>
     <h4>23</h4>
     <h3>6 Wines</h3>

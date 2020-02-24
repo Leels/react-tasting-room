@@ -9,12 +9,20 @@ function Food(){
     minHeight: "100vh"
   }
 
+  const title = {
+    textAlign: "center",
+    fontSize: "1rem",
+    paddingBottom: ".5rem"
+  }
+
   return (
     <div>
     <HeaderTwo />
     <Menu />
     <div style={foodStyles}>
-    <h3>À la carte</h3>
+    <div style={title}>
+    <h2>À la carte</h2>
+    </div>
     <h3>Castelveltrano Olives</h3>
     <h4>6.5</h4>
     <h3>Baguette & Salted Butter</h3>

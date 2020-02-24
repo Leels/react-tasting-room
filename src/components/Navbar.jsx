@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar(){
   const navbarStyles = {
+    // position: "fixed",
     height: "7vh",
     color: "#f2f2f2",
     backgroundColor: "black",
@@ -11,7 +12,7 @@ function Navbar(){
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    fontFamily: "Raleway"
+    fontFamily: "Raleway",
 
   }
   const titleStyles = {
@@ -23,9 +24,10 @@ function Navbar(){
   }
   return (
     <div style={navbarStyles}>
+    <Link to="/">
     <h2 style={titleStyles}>The Tasting Room</h2>
+    </Link>
     <div style={linkStyles}>
-    <Link to="/">Home</Link>
     <Link to="/About">About</Link>
     </div>
     </div>

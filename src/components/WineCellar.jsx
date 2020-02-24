@@ -142,15 +142,17 @@ function WineCellar(props){
 
   const title = {
     textAlign: "center",
-    fontSize: "3rem",
-    textDecoration: "underline"
+    fontSize: "1rem",
+    paddingBottom: ".5rem"
   }
 
   return (
     <div>
     <HeaderTwo />
     <Menu />
-    <h2 style={title}>In Our Cellar</h2>
+    <div style={title}>
+    <h2>Wine List</h2>
+    </div>
     <div style={layoutStyles}>
       {availableWines.map((wine, index) =>
         <Bottle

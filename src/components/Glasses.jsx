@@ -6,7 +6,13 @@ import HeaderTwo from './HeaderTwo';
 function Glasses(){
   const glassesStyles = {
     alignItems: "center",
-    minHeight: "60vh"
+    minHeight: "100vh"
+  }
+
+  const title = {
+    textAlign: "center",
+    fontSize: "1rem",
+    paddingBottom: ".5rem"
   }
 
   return (
@@ -14,7 +20,9 @@ function Glasses(){
     <HeaderTwo />
     <Menu />
     <div style={glassesStyles}>
-    <h3>6 oz. pours. Please see list of current wines.</h3>
+    <div style={title}>
+    <h2>6 oz. pours. Please see list of current wines.</h2>
+    </div>
     <h3>WHITES</h3>
     <h4>8-13</h4>
     <h3>REDS</h3>
