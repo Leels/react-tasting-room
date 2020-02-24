@@ -18,16 +18,16 @@ function Menu(props){
     <div>
     <div style={menuStyles}>
     <Link to="/Tastings">
-    <h3>TASTINGS</h3>
+    <h3 class="underline">TASTINGS</h3>
     </Link>
     <Link to="/Glasses">
-    <h3>GLASSES</h3>
+    <h3 class="underline">GLASSES</h3>
     </Link>
     <Link to="/WineCellar">
-    <h3>CURRENT WINES</h3>
+    <h3 class="underline">CURRENT WINES</h3>
     </Link>
     <Link to="/Food">
-    <h3>FOOD</h3>
+    <h3 class="underline">FOOD</h3>
     </Link>
     </div>
     </div>

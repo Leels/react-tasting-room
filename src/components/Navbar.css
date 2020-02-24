@@ -4,6 +4,6 @@ a {
   text-decoration: none;
 }
 
-/* a:hover {
+.underline:hover {
   text-decoration: underline;
-} */
+}

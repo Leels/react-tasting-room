@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 function Navbar(){
   const navbarStyles = {
-    // position: "fixed",
     height: "7vh",
     color: "#f2f2f2",
     backgroundColor: "black",
@@ -24,11 +23,13 @@ function Navbar(){
   }
   return (
     <div style={navbarStyles}>
-    <Link to="/">
+    <div class="underline">
     <h2 style={titleStyles}>The Tasting Room</h2>
-    </Link>
+    </div>
     <div style={linkStyles}>
+    <div class="underline">
     <Link to="/About">About</Link>
+    </div>
     </div>
     </div>
   );
