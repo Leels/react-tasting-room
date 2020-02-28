@@ -7,30 +7,49 @@ import Tastings from './components/Tastings';
 import Glasses from './components/Glasses';
 import Food from './components/Food';
 import About from './components/About';
-import WineCellar from './components/WineCellar';
+import WineList from './components/WineList';
+import NewWineForm from './components/NewWineForm';
+import NewWineControl from './components/NewWineControl';
+import Admin from './components/Admin';
 import Error404 from './components/Error404';
 import EnterSiteControl from './components/EnterSiteControl';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 
-function App() {
-  return (
-    <div className="App">
-        <Navbar />
-        <Switch>
-        <Route exact path='/' component={EnterSiteControl} />
-        <Route exact path='/About' component={About} />
-        <Route exact path='/Tastings' component={Tastings} />
-        <Route exact path='/Glasses' component={Glasses} />
-          <Route exact path='/WineCellar' component={WineCellar} />
-          <Route exact path='/Food' component={Food} />
-        <Route exact path='/About' component={About} />
-        <Route component={Error404} />
-        </Switch>
-        <Footer />
-    </div>
-  );
-}
+class App extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterWineList: []
+    };
+    this.handleAddingNewWineToList = this.handleAddingNewWineToList.bind(this);
+  }
+
+  handleAddingNewWineToList(newWine){
+    var newMasterWineList = this.state.masterWineList.slice();
+    newMasterWineList.push(newWine);
+    this.setState({masterWineList: newMasterWineList});
+  }
+
+  render() {
+    return (
+      <div className="App">
+      <Navbar />
+        <Switch>
+          <Route exact path='/' component={EnterSiteControl} />
+          <Route exact path='/About' component={About} />
+          <Route exact path='/Tastings' component={Tastings} />
+          <Route exact path='/Glasses' component={Glasses} />
+          <Route exact path='/WineList' render={()=><WineList wineList={this.state.masterWineList} />} />
+          <Route exact path='/Food' component={Food} />
+          <Route exact path='/NewWineForm' render={()=><NewWineControl onNewWineCreation={this.handleAddingNewWineList} />} />
+          <Route component={Error404} />
+        </Switch>
+      <Footer />
+      </div>
+    );
+  }
+}
 export default App;

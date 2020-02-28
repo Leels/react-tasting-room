@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import EnterSiteControl from './EnterSiteControl';
-import WineCellar from './WineCellar';
 import './Header.css';
 
 function HeaderTwo(){

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import HeaderTwo from './HeaderTwo';
-import WineCellar from './WineCellar';
+import WineList from './WineList';
 import './Menu.css';
 import { Link } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ function Menu(props){
     <Link to="/Glasses">
     <h3 class="underline">GLASSES</h3>
     </Link>
-    <Link to="/WineCellar">
+    <Link to="/WineList">
     <h3 class="underline">CURRENT WINES</h3>
     </Link>
     <Link to="/Food">

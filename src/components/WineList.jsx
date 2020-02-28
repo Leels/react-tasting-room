@@ -7,14 +7,15 @@ import White from "./images/White.png";
 import Sparkling from "./images/Sparkling.png";
 import PropTypes from 'prop-types';
 import HeaderTwo from './HeaderTwo';
+import NewWineControl from './NewWineControl';
 
-const availableWines = [
+const wineList = [
    {
       name: "Domaine Eric et Joel Durand Cornas Empreintes- 2016",
       image: Red,
       origin: "Rhone, France",
       cost: "15/42",
-      about: "Red, Syrah, Bold, Structured, Pair with lamb.",
+      keywords: "Red, Syrah, Bold, Structured, Pair with lamb.",
       pairing: "Pair with lamb."
    },
    {
@@ -22,7 +23,7 @@ const availableWines = [
      image: Sparkling,
      origin: "Veneto, Italy",
      cost: "8/17",
-     about: "Sparkling, Glera (Prosecco), Fresh, Youthful",
+     keywords: "Sparkling, Glera (Prosecco), Fresh, Youthful",
      pairing: "Pair with pork."
    },
    {
@@ -30,7 +31,7 @@ const availableWines = [
      image: Red,
      origin: "Montagny Premier Cru, France",
      cost: "14/40",
-     about: "Red, Chianti Blend, Savory, Classic",
+     keywords: "Red, Chianti Blend, Savory, Classic",
      pairing: "Pair with lamb."
    },
    {
@@ -38,7 +39,7 @@ const availableWines = [
      image: Red,
      origin: "Tuscany, Italy",
      cost: "14/42",
-     about: "Red, Syrah, Bold, Structured",
+     keywords: "Red, Syrah, Bold, Structured",
      pairing: "Pair with lamb."
    },
    {
@@ -46,7 +47,7 @@ const availableWines = [
      image: White,
      origin: "Pfalz, Germany",
      cost: "13/39",
-     about: "Dessert, Riesling, Lush, Balanced",
+     keywords: "Dessert, Riesling, Lush, Balanced",
      pairing: "Pair with fruit based desserts."
    },
    {
@@ -54,7 +55,7 @@ const availableWines = [
      image: Red,
      origin: "Rioja, Spain",
      cost: "18/57",
-     about: "Red, Rioja Red Blend, Savory, Classic",
+     keywords: "Red, Rioja Red Blend, Savory, Classic",
      pairing: "Pair with lamb."
    },
    {
@@ -62,7 +63,7 @@ const availableWines = [
      origin: "Provence, France",
      image: Rose,
      cost: "8/16",
-     about: "Rose, Cinsaut - Grenache, Crisp, Dry",
+     keywords: "Rose, Cinsaut - Grenache, Crisp, Dry",
      pairing: "Pair with salads and green vegetables."
    },
    {
@@ -70,7 +71,7 @@ const availableWines = [
      image: Red,
      origin: "Willamette Valley, Oregon",
      cost: "9/21",
-     about: "Red, Pinot Noir, Light, Perfumed",
+     keywords: "Red, Pinot Noir, Light, Perfumed",
      pairing: "Pair with chicken and turkey."
    },
    {
@@ -78,7 +79,7 @@ const availableWines = [
      image: White,
      origin: "Veneto, Italy",
      cost: "10/31",
-     about: "White, Soave Blend, Green, Flinty",
+     keywords: "White, Soave Blend, Green, Flinty",
      pairing: "Pair with white fish."
    },
    {
@@ -86,7 +87,7 @@ const availableWines = [
      image: Red,
      origin: "Uco Valley, Argentina",
      cost: "11/35",
-     about: "Red, Cabernet - Malbec - Syrah, Bold, Structured",
+     keywords: "Red, Cabernet - Malbec - Syrah, Bold, Structured",
      pairing: "Pair with beef and venison."
    },
    {
@@ -94,7 +95,7 @@ const availableWines = [
      image: Sparkling,
      origin: "North Coast, California",
      cost: "11/36",
-     about: "Sparkling, Chardonnay, Complex, Traditional",
+     keywords: "Sparkling, Chardonnay, Complex, Traditional",
      pairing: "Pair with crab and lobster."
    },
    {
@@ -102,7 +103,7 @@ const availableWines = [
      image: Red,
      origin: "Arribes, Spain",
      cost: "10/31",
-     about: "Red, Rare Red Blend, Rich, Intense",
+     keywords: "Red, Rare Red Blend, Rich, Intense",
      pairing: "Pair with lamb."
    },
    {
@@ -110,7 +111,7 @@ const availableWines = [
      image: Red,
      origin: "Willamette Valley, Oregon",
      cost: "12/38",
-     about: "Red, Pinot Noir, Light, Perfumed",
+     keywords: "Red, Pinot Noir, Light, Perfumed",
      pairing: "Pair with chicken and turkey."
    },
    {
@@ -118,7 +119,7 @@ const availableWines = [
      image: White,
      origin: "Stellenbosch, South Africa",
      cost: "13/40",
-     about: "White, Chenin Blanc, Buttery, Complex",
+     keywords: "White, Chenin Blanc, Buttery, Complex",
      pairing: "Pair with cheddar and gruyere."
    },
    {
@@ -126,12 +127,12 @@ const availableWines = [
      origin: "Beaujolais, France",
      image: Red,
      cost: "13/39",
-     about: "Red, Gamay, Light, Perfumed",
+     keywords: "Red, Gamay, Light, Perfumed",
      pairing: "Pair with chicken and turkey."
    }
 ];
 
-function WineCellar(props){
+function WineList(props){
   const layoutStyles = {
     display: "flex",
     flexWrap: "wrap",
@@ -146,7 +147,7 @@ function WineCellar(props){
     paddingBottom: ".5rem"
   }
 
-  return (
+  return(
     <div>
     <HeaderTwo />
     <Menu />
@@ -154,23 +155,24 @@ function WineCellar(props){
     <h2>Wine List</h2>
     </div>
     <div style={layoutStyles}>
-      {availableWines.map((wine, index) =>
+      {props.wineList.map((wine, index) =>
         <Bottle
         name={wine.name}
         image={wine.image}
         origin={wine.origin}
         cost={wine.cost}
-        about={wine.about}
+        keywords={wine.keywords}
         pairing={wine.pairing}
         key={index}/>
       )}
     </div>
+    <button class="suit_and_tie" onClick={props.onTroubleshootingConfirmation}>Show new wine form</button>
     </div>
   );
 }
 
-WineCellar.propTypes = {
-  onWinesTroubleshootingConfirmation: PropTypes.func
+WineList.propTypes = {
+  wineList: PropTypes.array
 };
 
-export default WineCellar;
+export default WineList;
