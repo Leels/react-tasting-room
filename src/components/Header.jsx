@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import EnterSiteControl from './EnterSiteControl';
 import './Header.css';
 
-function Header(props){
+function Header(){
   const headerStyles = {
     backgroundImage: "url('winepour.jpg')",
     height: "75vh",
@@ -19,18 +17,21 @@ function Header(props){
     flexDirection: "column"
   }
 
+    const scrollText = {
+      color: "white",
+      textAlign: "center",
+      fontStyle: "italic",
+      paddingTop: "70px"
+    }
+
   return (
     <div style={headerStyles}>
       <h1>The Tasting Room</h1>
-      <div class="variation-b">
-        <button class="suit_and_tie" onClick={props.onTroubleshootingConfirmation}>must be 21+ to enter</button>
+      <div style={scrollText}>
+        <h3>scroll down to view our menu</h3>
       </div>
     </div>
   );
 }
-
-Header.propTypes = {
-  onTroubleshootingConfirmation: PropTypes.func
-};
 
 export default Header;

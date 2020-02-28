@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import Menu from './Menu';
-import HeaderTwo from './HeaderTwo';
 
 
 function Tastings(){
@@ -18,7 +17,6 @@ function Tastings(){
 
   return (
     <div>
-    <HeaderTwo />
     <Menu />
     <div style={tastingsStyles}>
     <div style={title}>

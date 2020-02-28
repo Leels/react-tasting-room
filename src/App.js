@@ -12,7 +12,6 @@ import NewWineForm from './components/NewWineForm';
 import NewWineControl from './components/NewWineControl';
 import Admin from './components/Admin';
 import Error404 from './components/Error404';
-import EnterSiteControl from './components/EnterSiteControl';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
@@ -37,8 +36,9 @@ class App extends React.Component {
     return (
       <div className="App">
       <Navbar />
+      <Header />
         <Switch>
-          <Route exact path='/' component={EnterSiteControl} />
+          <Route exact path='/' component={WineList} />
           <Route exact path='/About' component={About} />
           <Route exact path='/Tastings' component={Tastings} />
           <Route exact path='/Glasses' component={Glasses} />

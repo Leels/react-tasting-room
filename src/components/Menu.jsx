@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
-import HeaderTwo from './HeaderTwo';
 import WineList from './WineList';
 import './Menu.css';
 import { Link } from 'react-router-dom';

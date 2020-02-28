@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import EnterSiteControl from './EnterSiteControl';
 import './Header.css';
 
 function HeaderTwo(){
@@ -34,9 +33,5 @@ function HeaderTwo(){
     </div>
   );
 }
-
-// Header2.propTypes = {
-//   onTroubleshootingConfirmation: PropTypes.func
-// };
 
 export default HeaderTwo;

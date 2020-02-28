@@ -1,6 +1,5 @@
 import React from "react";
 import Menu from './Menu';
-import HeaderTwo from './HeaderTwo';
 
 
 function Food(){
@@ -17,7 +16,6 @@ function Food(){
 
   return (
     <div>
-    <HeaderTwo />
     <Menu />
     <div style={foodStyles}>
     <div style={title}>

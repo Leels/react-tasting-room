@@ -6,7 +6,6 @@ import Rose from "./images/Rose.png";
 import White from "./images/White.png";
 import Sparkling from "./images/Sparkling.png";
 import PropTypes from 'prop-types';
-import HeaderTwo from './HeaderTwo';
 import NewWineControl from './NewWineControl';
 
 const wineList = [
@@ -149,7 +148,6 @@ function WineList(props){
 
   return(
     <div>
-    <HeaderTwo />
     <Menu />
     <div style={title}>
     <h2>Wine List</h2>

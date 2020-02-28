@@ -33,7 +33,7 @@ Bottle.propTypes = {
   image: PropTypes.object,
   origin: PropTypes.string,
   cost: PropTypes.string,
-  keywords: PropTypes.array,
+  keywords: PropTypes.string,
   pairing: PropTypes.string
 
 }

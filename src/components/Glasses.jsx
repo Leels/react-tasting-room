@@ -17,7 +17,6 @@ function Glasses(){
 
   return (
     <div>
-    <HeaderTwo />
     <Menu />
     <div style={glassesStyles}>
     <div style={title}>
