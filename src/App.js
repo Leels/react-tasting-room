@@ -27,7 +27,7 @@ class App extends React.Component {
   }
 
   handleAddingNewWineToList(newWine){
-    var newMasterWineList = this.state.masterWineList.slice();
+    const newMasterWineList = this.state.masterWineList.slice();
     newMasterWineList.push(newWine);
     this.setState({masterWineList: newMasterWineList});
   }
@@ -38,13 +38,13 @@ class App extends React.Component {
       <Navbar />
       <Header />
         <Switch>
-          <Route exact path='/' component={WineList} />
+          <Route exact path='/' component={Tastings} />
           <Route exact path='/About' component={About} />
           <Route exact path='/Tastings' component={Tastings} />
           <Route exact path='/Glasses' component={Glasses} />
           <Route exact path='/WineList' render={()=><WineList wineList={this.state.masterWineList} />} />
           <Route exact path='/Food' component={Food} />
-          <Route exact path='/NewWineForm' render={()=><NewWineControl onNewWineCreation={this.handleAddingNewWineList} />} />
+          <Route exact path='/NewWineForm' render={()=><NewWineControl onNewWineCreation={this.handleAddingNewWineToList} />} />
           <Route component={Error404} />
         </Switch>
       <Footer />

@@ -21,14 +21,15 @@ function Header(){
       color: "white",
       textAlign: "center",
       fontStyle: "italic",
-      paddingTop: "70px"
+      paddingTop: "10px"
     }
 
   return (
     <div style={headerStyles}>
       <h1>The Tasting Room</h1>
       <div style={scrollText}>
-        <h3>scroll down to view our menu</h3>
+        <h2>"Wine is the only artwork you can drink" - Luis Fernando Olaverris.</h2>
+        <h3>Scroll down to view our current collection of wines.</h3>
       </div>
     </div>
   );
