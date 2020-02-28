@@ -7,8 +7,9 @@ import White from "./images/White.png";
 import Sparkling from "./images/Sparkling.png";
 import PropTypes from 'prop-types';
 import NewWineControl from './NewWineControl';
+import CreateWineButton from './CreateWineButton';
 
-const wineList = [
+let wineList = [
    {
       name: "Domaine Eric et Joel Durand Cornas Empreintes- 2016",
       image: Red,
@@ -164,7 +165,7 @@ function WineList(props){
         key={index}/>
       )}
     </div>
-    <button class="suit_and_tie" onClick={props.onTroubleshootingConfirmation}>Show new wine form</button>
+    <CreateWineButton />
     </div>
   );
 }

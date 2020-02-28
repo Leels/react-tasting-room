@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
-import { Form, FormControl, Button } from 'react-bootstrap';
 
 function NewWineForm(props){
   let _name = null;
