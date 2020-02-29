@@ -17,6 +17,7 @@ function Navbar(){
   const titleStyles = {
     fontFamily: "Charmonman",
     fontWeight: "bold",
+    fontSize: "120%"
   }
   var linkStyles = {
     padding: "0 8px"
@@ -24,7 +25,7 @@ function Navbar(){
   return (
     <div style={navbarStyles}>
     <div class="underline">
-    <h2 style={titleStyles}>The Tasting Room</h2>
+    <Link to="/" style={titleStyles}>The Tasting Room</Link>
     </div>
     <div style={linkStyles}>
     <div class="underline">

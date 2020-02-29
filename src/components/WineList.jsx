@@ -7,9 +7,9 @@ import White from "./images/White.png";
 import Sparkling from "./images/Sparkling.png";
 import PropTypes from 'prop-types';
 import NewWineControl from './NewWineControl';
-import CreateWineButton from './CreateWineButton';
+import NewWineButton from './NewWineButton';
 
-let wineList = [
+let masterWineList = [
    {
       name: "Domaine Eric et Joel Durand Cornas Empreintes- 2016",
       image: Red,
@@ -154,7 +154,7 @@ function WineList(props){
     <h2>Wine List</h2>
     </div>
     <div style={layoutStyles}>
-      {props.wineList.map((wine, index) =>
+      {masterWineList.map((wine, index) =>
         <Bottle
         name={wine.name}
         image={wine.image}
@@ -162,16 +162,16 @@ function WineList(props){
         cost={wine.cost}
         keywords={wine.keywords}
         pairing={wine.pairing}
-        key={index}/>
+        key={wine.id}/>
       )}
+      <button class="suit_and_tie" onClick={props.onNewWineFormButton}>Add New Wine</button>
     </div>
-    <CreateWineButton />
     </div>
   );
 }
 
 WineList.propTypes = {
-  wineList: PropTypes.array
+onNewWineFormButton: PropTypes.func
 };
 
 export default WineList;

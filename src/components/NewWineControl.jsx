@@ -2,40 +2,37 @@ import React from 'react';
 import WineList from './WineList';
 import NewWineForm from './NewWineForm';
 import PropTypes from 'prop-types';
-import CreateWineButton from './CreateWineButton';
+import NewWineButton from './NewWineButton';
+
 
 class NewWineControl extends React.Component {
+
   constructor(props) {
-    super(props);
-    this.state = {
-      formVisibleOnPage: false
-    };
-    this.handleTroubleShootingConfirmation = this.handleTroubleShootingConfirmation.bind(this);
-  }
+      super(props);
+      this.state = {
+        formVisibleOnPage: false
+      };
+      this.handleNewWineFormButton = this.handleNewWineFormButton.bind(this);
+    }
 
-  handleTroubleShootingConfirmation(){
-    this.setState({formVisibleOnPage: true});
-  }
+    handleNewWineFormButton(){
+      this.setState({formVisibleOnPage: true});
 
+    }
 
   render(){
     let currentlyVisibleContent = null;
-
     if (this.state.formVisibleOnPage){
-      currentlyVisibleContent = <NewWineForm onNewWineCreation={this.props.onNewWineCreation}/>;
+      currentlyVisibleContent = <NewWineForm />;
     } else {
-      currentlyVisibleContent = <CreateWineButton onTroubleshootingConfirmation={this.handleTroubleShootingConfirmation}/>;
+      currentlyVisibleContent = <WineList onNewWineFormButton={this.handleNewWineFormButton}/>;
     }
     return (
       <div>
-      {currentlyVisibleContent}
+        {currentlyVisibleContent}
       </div>
     );
   }
 }
-
-NewWineControl.propTypes = {
-  onNewWineCreation: PropTypes.func
-};
 
 export default NewWineControl;

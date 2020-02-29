@@ -16,40 +16,24 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 
-class App extends React.Component {
+function App() {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      masterWineList: []
-    };
-    this.handleAddingNewWineToList = this.handleAddingNewWineToList.bind(this);
-  }
-
-  handleAddingNewWineToList(newWine){
-    const newMasterWineList = this.state.masterWineList.slice();
-    newMasterWineList.push(newWine);
-    this.setState({masterWineList: newMasterWineList});
-  }
-
-  render() {
     return (
       <div className="App">
       <Navbar />
       <Header />
         <Switch>
           <Route exact path='/' component={Tastings} />
-          <Route exact path='/About' component={About} />
-          <Route exact path='/Tastings' component={Tastings} />
-          <Route exact path='/Glasses' component={Glasses} />
-          <Route exact path='/WineList' render={()=><WineList wineList={this.state.masterWineList} />} />
-          <Route exact path='/Food' component={Food} />
-          <Route exact path='/NewWineForm' render={()=><NewWineControl onNewWineCreation={this.handleAddingNewWineToList} />} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/tastings' component={Tastings} />
+          <Route exact path='/glasses' component={Glasses} />
+          <Route exact path='/food' component={Food} />
+          <Route exact path='/winelist' component={NewWineControl} />
           <Route component={Error404} />
         </Switch>
       <Footer />
       </div>
     );
   }
-}
+
 export default App;
