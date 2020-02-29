@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
 
-function NewWineForm(){
+function NewWineForm(props){
   let _name = null;
   let _image = null;
   let _origin = null;
@@ -13,6 +13,7 @@ function NewWineForm(){
 
   function handleNewWineFormSubmission(event) {
     event.preventDefault();
+    props.onNewWineCreation({name: _name.value, image: _image.value, origin: _origin.value, price: _price.value, keywords: _keywords.value, pairings: _pairings.value,});
     _name.value = '';
     _image.value = '';
     _origin.value = '';
@@ -65,6 +66,10 @@ function NewWineForm(){
 
   );
 }
+
+NewWineForm.propTypes = {
+  onNewWineCreation: PropTypes.func
+};
 
 
 export default NewWineForm;

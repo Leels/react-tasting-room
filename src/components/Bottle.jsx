@@ -36,6 +36,6 @@ Bottle.propTypes = {
   keywords: PropTypes.string,
   pairing: PropTypes.string
 
-}
+};
 
 export default Bottle;

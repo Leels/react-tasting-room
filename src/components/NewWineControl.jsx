@@ -23,9 +23,9 @@ class NewWineControl extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
-      currentlyVisibleContent = <NewWineForm />;
+      currentlyVisibleContent = <NewWineForm onNewWineCreation={this.props.onNewWineCreation}/>;
     } else {
-      currentlyVisibleContent = <WineList onNewWineFormButton={this.handleNewWineFormButton}/>;
+      currentlyVisibleContent = <NewWineButton onNewWineFormButton={this.handleNewWineFormButton}/>;
     }
     return (
       <div>
@@ -34,5 +34,9 @@ class NewWineControl extends React.Component {
     );
   }
 }
+
+NewWineControl.propTypes = {
+  onNewWineCreation: PropTypes.func
+};
 
 export default NewWineControl;

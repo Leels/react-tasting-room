@@ -4,9 +4,9 @@ import "./About.css"
 
 function About() {
 
-  const headerStyles = {
+  const aboutStyles = {
     backgroundImage: "url('emptyglass.jpg')",
-    height: "75vh",
+    height: "100vh",
     backgroundAttachment: "fixed",
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
@@ -14,7 +14,8 @@ function About() {
     marginBottom: "32px",
     display: "flex",
     justifyContent: "center",
-    flexDirection: "column"
+    flexDirection: "column",
+
   }
 
     const scrollText = {
@@ -24,7 +25,7 @@ function About() {
     }
 
 return (
-  <div style={headerStyles}>
+  <div style={aboutStyles}>
   <div class="textBackground" style={scrollText}>
   <h1>Our Story</h1>
   <h3>We are a local family owned tasting room and wine shop located in the heart of downtown Portland. We focus on fine imported, small batch wines mostly from Europe and also locally here in Oregon.</h3>

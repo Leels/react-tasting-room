@@ -21,7 +21,7 @@ function Menu(props){
     <Link to="/Glasses">
     <h3 class="underline">GLASSES</h3>
     </Link>
-    <Link to="/WineList">
+    <Link to="/">
     <h3 class="underline">CURRENT WINES</h3>
     </Link>
     <Link to="/Food">

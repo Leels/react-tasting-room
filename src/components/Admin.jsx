@@ -13,7 +13,7 @@ function Admin(props){
 }
 
 Admin.propTypes = {
-  ticketList: PropTypes.array
+  wineList: PropTypes.array
 };
 
 export default Admin;
