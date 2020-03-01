@@ -13,7 +13,7 @@ function NewWineForm(props){
 
   function handleNewWineFormSubmission(event) {
     event.preventDefault();
-    props.onNewWineCreation({name: _name.value, image: _image.value, origin: _origin.value, price: _price.value, keywords: _keywords.value, pairings: _pairings.value,});
+    props.onNewWineCreation({name: _name.value, image: _image.value, origin: _origin.value, price: _price.value, keywords: _keywords.value, pairings: _pairings.value, id: v4()});
     _name.value = '';
     _image.value = '';
     _origin.value = '';

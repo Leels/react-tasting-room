@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NewWineControl from './NewWineControl';
+import './NewWineButton.css'
 
 function NewWineButton(props){
 
-  const buttonStyles = {
-    height: "100vh",
-  }
-
 return (
-  <div style={buttonStyles}>
+  <div class="variation-a">
     <button class="suit_and_tie" onClick={props.onNewWineFormButton}>Add New Wine</button>
   </div>
 );

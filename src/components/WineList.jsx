@@ -33,7 +33,7 @@ function WineList(props){
     <h2>Wine List</h2>
     </div>
     <div style={layoutStyles}>
-      {props.wineList.map((wine, index) =>
+      {props.wineList.map((wine) =>
         <Bottle
         name={wine.name}
         image={wine.image}
@@ -41,16 +41,17 @@ function WineList(props){
         cost={wine.cost}
         keywords={wine.keywords}
         pairing={wine.pairing}
+        currentRouterPath={props.currentRouterPath}
         key={wine.id}/>
       )}
     </div>
-    <NewWineButton />
     </div>
   );
 }
 
 WineList.propTypes = {
 wineList: PropTypes.array,
+currentRouterPath: PropTypes.string
 };
 
 export default WineList;

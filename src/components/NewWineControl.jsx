@@ -1,5 +1,6 @@
 import React from 'react';
 import WineList from './WineList';
+import Admin from './Admin';
 import NewWineForm from './NewWineForm';
 import PropTypes from 'prop-types';
 import NewWineButton from './NewWineButton';
