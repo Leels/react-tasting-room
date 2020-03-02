@@ -146,9 +146,15 @@ class App extends React.Component {
            keywords: "Red, Gamay, Light, Perfumed",
            pairing: "Pair with chicken and turkey."
          }
-      ]
+      ],
+      selectedWine: null
     };
+
     this.handleAddingNewWineToList = this.handleAddingNewWineToList.bind(this);
+    this.handleChangingSelectedWine = this.handleChangingSelectedWine.bind(this);
+  }
+  handleChangingSelectedWine(wine){
+    this.setState({selectedWine: wine});
   }
 
   handleAddingNewWineToList(newWine){
@@ -169,7 +175,7 @@ class App extends React.Component {
           <Route exact path='/tastings' component={Tastings} />
           <Route exact path='/food' component={Food} />
           <Route exact path='/newwine' render={()=><NewWineControl onNewWineCreation={this.handleAddingNewWineToList} />} />
-          <Route path='/admin' render={(props)=><Admin wineList={this.state.masterWineList} currentRouterPath={props.location.pathname}/>}/>
+          <Route path='/admin' render={(props)=><Admin wineList={this.state.masterWineList} currentRouterPath={props.location.pathname} onWineSelection={this.handleChangingSelectedWine} selectedWine={this.state.selectedWine}/>}/>
           <Route component={Error404} />
         </Switch>
       <Footer />

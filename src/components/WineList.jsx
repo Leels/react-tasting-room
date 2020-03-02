@@ -1,5 +1,5 @@
 import React from "react";
-import Bottle from './Bottle';
+import Wine from './Wine';
 import Menu from './Menu';
 import Red from "./images/Red.png";
 import Rose from "./images/Rose.png";
@@ -34,15 +34,16 @@ function WineList(props){
     </div>
     <div style={layoutStyles}>
       {props.wineList.map((wine) =>
-        <Bottle
+        <Wine
         name={wine.name}
         image={wine.image}
         origin={wine.origin}
         cost={wine.cost}
         keywords={wine.keywords}
         pairing={wine.pairing}
+        key={wine.id}
         currentRouterPath={props.currentRouterPath}
-        key={wine.id}/>
+        onWineSelection={props.onWineSelection}/>
       )}
     </div>
     </div>
@@ -51,7 +52,8 @@ function WineList(props){
 
 WineList.propTypes = {
 wineList: PropTypes.array,
-currentRouterPath: PropTypes.string
+currentRouterPath: PropTypes.string,
+onWineSelection: PropTypes.func
 };
 
 export default WineList;

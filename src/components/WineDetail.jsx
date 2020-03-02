@@ -1,9 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function WineDetail(){
+function WineDetail(props){
   return (
-    <h2>Wine Details will be visible here soon!</h2>
+    <div>
+      <h1>{props.selectedWine.name}</h1>
+    </div>
   );
 }
+
+WineDetail.propTypes = {
+  selectedWine: PropTypes.object
+};
 
 export default WineDetail;
