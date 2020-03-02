@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 
 function Navbar(){
-  var navbarStyles = {
+  const navbarStyles = {
     height: "7vh",
     color: "#f2f2f2",
     backgroundColor: "black",
@@ -11,22 +11,26 @@ function Navbar(){
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    fontFamily: "Raleway"
+    fontFamily: "Raleway",
 
   }
-  var titleStyles = {
+  const titleStyles = {
     fontFamily: "Charmonman",
     fontWeight: "bold",
+    fontSize: "120%"
   }
-  var linkStyles = {
+  const linkStyles = {
     padding: "0 8px"
   }
   return (
     <div style={navbarStyles}>
-    <h2 style={titleStyles}>The Tasting Room</h2>
+    <div class="underline">
+    <Link to="/" style={titleStyles}>The Tasting Room</Link>
+    </div>
     <div style={linkStyles}>
-    <Link to="/">Home</Link>
-    <Link to="/About">About</Link>
+    <div class="underline">
+    <Link to="/Admin">Admin</Link>
+    </div>
     </div>
     </div>
   );
