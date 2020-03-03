@@ -24,7 +24,7 @@ function Wine(props){
     <h4>{props.pairing}</h4>
     </div>;
 
-    if (props.currentRouterPath === '/admin'){
+    if (props.currentRouterPath === '/Admin'){
     return (
       <div style={wineStyles} className="wine" onClick={() => {props.onWineSelection({name: props.name, image: props.image, origin: props.origin, cost: props.cost, keywords: props.keywords, pairing: props.pairing});}}>
         {wineInformation}

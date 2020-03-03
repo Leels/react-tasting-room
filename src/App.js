@@ -32,7 +32,8 @@ class App extends React.Component {
             origin: "Rhone, France",
             cost: "15/42",
             keywords: "Red, Syrah, Bold, Structured, Pair with lamb.",
-            pairing: "Pair with lamb."
+            pairing: "Pair with lamb.",
+            id: "1"
          },
          {
            name: "Nino Franco Prosecco di Conegliano-Valdobbiadene Superiore Brut DOCG",
@@ -40,7 +41,8 @@ class App extends React.Component {
            origin: "Veneto, Italy",
            cost: "8/17",
            keywords: "Sparkling, Glera (Prosecco), Fresh, Youthful",
-           pairing: "Pair with pork."
+           pairing: "Pair with pork.",
+           id: "2"
          },
          {
            name: "Domaine Laurent Cognard Le Vieux Chateaux- 2016",
@@ -48,7 +50,8 @@ class App extends React.Component {
            origin: "Montagny Premier Cru, France",
            cost: "14/40",
            keywords: "Red, Chianti Blend, Savory, Classic",
-           pairing: "Pair with lamb."
+           pairing: "Pair with lamb.",
+           id: "3"
          },
          {
            name: "Fattoria di Petroio 'Poggio ai Grilli' Chianti Classico Gran Selezione DOCG 2015",
@@ -56,7 +59,8 @@ class App extends React.Component {
            origin: "Tuscany, Italy",
            cost: "14/42",
            keywords: "Red, Syrah, Bold, Structured",
-           pairing: "Pair with lamb."
+           pairing: "Pair with lamb.",
+           id: "4"
          },
          {
            name: "Muller-Catoir Haardter Burgergarten 'Breumel in den Mauern' Riesling Auslese 2015",
@@ -64,7 +68,8 @@ class App extends React.Component {
            origin: "Pfalz, Germany",
            cost: "13/39",
            keywords: "Dessert, Riesling, Lush, Balanced",
-           pairing: "Pair with fruit based desserts."
+           pairing: "Pair with fruit based desserts.",
+           id: "5"
          },
          {
            name: "La Rioja Alta S.A. Gran Reserva 904, Rioja DOCa 2010",
@@ -72,7 +77,8 @@ class App extends React.Component {
            origin: "Rioja, Spain",
            cost: "18/57",
            keywords: "Red, Rioja Red Blend, Savory, Classic",
-           pairing: "Pair with lamb."
+           pairing: "Pair with lamb.",
+           id: "6"
          },
          {
            name: "Chateau Miraval Cotes de Provence Rose 2017",
@@ -80,7 +86,8 @@ class App extends React.Component {
            image: Rose,
            cost: "8/16",
            keywords: "Rose, Cinsaut - Grenache, Crisp, Dry",
-           pairing: "Pair with salads and green vegetables."
+           pairing: "Pair with salads and green vegetables.",
+           id: "7"
          },
          {
            name: "Boedecker Cellars Willamette Valley Pinot Noir 2015",
@@ -88,7 +95,8 @@ class App extends React.Component {
            origin: "Willamette Valley, Oregon",
            cost: "9/21",
            keywords: "Red, Pinot Noir, Light, Perfumed",
-           pairing: "Pair with chicken and turkey."
+           pairing: "Pair with chicken and turkey.",
+           id: "8"
          },
          {
            name: "Pieropan Calvarino Soave Classico 2015",
@@ -96,7 +104,8 @@ class App extends React.Component {
            origin: "Veneto, Italy",
            cost: "10/31",
            keywords: "White, Soave Blend, Green, Flinty",
-           pairing: "Pair with white fish."
+           pairing: "Pair with white fish.",
+           id: "9"
          },
          {
            name: "Finca Flichman 'Dedicado' Gran Corte 2015",
@@ -104,7 +113,8 @@ class App extends React.Component {
            origin: "Uco Valley, Argentina",
            cost: "11/35",
            keywords: "Red, Cabernet - Malbec - Syrah, Bold, Structured",
-           pairing: "Pair with beef and venison."
+           pairing: "Pair with beef and venison.",
+           id: "10"
          },
          {
            name: "Schramsberg Blanc de Blancs 2016",
@@ -112,7 +122,8 @@ class App extends React.Component {
            origin: "North Coast, California",
            cost: "11/36",
            keywords: "Sparkling, Chardonnay, Complex, Traditional",
-           pairing: "Pair with crab and lobster."
+           pairing: "Pair with crab and lobster.",
+           id: "11"
          },
          {
            name: "Daterra Camino de la Frontera Tinto 2017",
@@ -120,7 +131,8 @@ class App extends React.Component {
            origin: "Arribes, Spain",
            cost: "10/31",
            keywords: "Red, Rare Red Blend, Rich, Intense",
-           pairing: "Pair with lamb."
+           pairing: "Pair with lamb.",
+           id: "12"
          },
          {
            name: "Patricia Green Cellars 'Estate Vineyard - Etzel Block' Pinot Noir 2017",
@@ -128,7 +140,8 @@ class App extends React.Component {
            origin: "Willamette Valley, Oregon",
            cost: "12/38",
            keywords: "Red, Pinot Noir, Light, Perfumed",
-           pairing: "Pair with chicken and turkey."
+           pairing: "Pair with chicken and turkey.",
+           id: "13"
          },
          {
            name: "De Morgenzon Reserve Chenin Blanc 2017",
@@ -136,7 +149,8 @@ class App extends React.Component {
            origin: "Stellenbosch, South Africa",
            cost: "13/40",
            keywords: "White, Chenin Blanc, Buttery, Complex",
-           pairing: "Pair with cheddar and gruyere."
+           pairing: "Pair with cheddar and gruyere.",
+           id: "14"
          },
          {
            name: "Daniel Bouland Morgon Les Delys 2018",
@@ -144,7 +158,8 @@ class App extends React.Component {
            image: Red,
            cost: "13/39",
            keywords: "Red, Gamay, Light, Perfumed",
-           pairing: "Pair with chicken and turkey."
+           pairing: "Pair with chicken and turkey.",
+           id: "15"
          }
       ],
       selectedWine: null

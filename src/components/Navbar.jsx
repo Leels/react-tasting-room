@@ -29,7 +29,7 @@ function Navbar(){
     </div>
     <div style={linkStyles}>
     <div class="underline">
-    <Link to="/Admin">Admin</Link>
+    <Link to="/NewWine">Admin</Link>
     </div>
     </div>
     </div>

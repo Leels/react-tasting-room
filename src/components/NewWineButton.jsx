@@ -7,7 +7,7 @@ function NewWineButton(props){
 
   const pageStyles = {
     textAlign: "center",
-    minHeight: "100vh"
+    paddingBottom: "20vh"
   }
 
 return (

@@ -28,16 +28,19 @@ function NewWineForm(props){
   }
 
   const formSize = {
-    marginBottom: "20vh"
+    marginBottom: "20vh",
+    marginTop: "0px",
+    textAlign: "center"
   }
 
   return(
     <div style={formSize}>
     <div class="container">
+  
       <form onSubmit={handleNewWineFormSubmission}>
         <div class="row">
           <div class="col-25">
-            <label for="name">Name of Wine</label>
+            <label for="name">Name of Wine:</label>
           </div>
           <div class="col-75">
           <input
@@ -48,7 +51,7 @@ function NewWineForm(props){
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="image">Wine Image</label>
+            <label for="image">Image Url:</label>
           </div>
           <div class="col-75">
           <input
@@ -59,7 +62,7 @@ function NewWineForm(props){
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="origin">Origin</label>
+            <label for="origin">Origin:</label>
           </div>
           <div class="col-75">
           <input
@@ -70,7 +73,7 @@ function NewWineForm(props){
         </div>
     <div class="row">
       <div class="col-25">
-        <label for="price">Price</label>
+        <label for="price">Price (glass/bottle):</label>
       </div>
       <div class="col-75">
       <input
@@ -81,7 +84,7 @@ function NewWineForm(props){
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="keywords">Tasting Notes</label>
+        <label for="keywords">Tasting Notes:</label>
       </div>
       <div class="col-75">
       <input
@@ -92,7 +95,7 @@ function NewWineForm(props){
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="pairings">Food Pairing</label>
+        <label for="pairings">Food Pairing:</label>
       </div>
       <div class="col-75">
       <input
@@ -102,7 +105,9 @@ function NewWineForm(props){
       </div>
     </div>
         <div class="row">
-          <input value="Submit" type="submit"/>
+        <div class="variation-a">
+          <input class="suit_and_tie" value="Add New Wine" type="submit"/>
+          </div>
         </div>
       </form>
     </div>
