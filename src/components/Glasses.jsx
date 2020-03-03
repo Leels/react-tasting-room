@@ -1,12 +1,11 @@
 import React from "react";
 import Menu from './Menu';
-import HeaderTwo from './HeaderTwo';
 
 
 function Glasses(){
   const glassesStyles = {
     alignItems: "center",
-    minHeight: "100vh"
+    paddingBottom: "20vh"
   }
 
   const title = {

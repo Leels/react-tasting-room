@@ -9,15 +9,13 @@ import PropTypes from 'prop-types';
 import NewWineControl from './NewWineControl';
 import NewWineButton from './NewWineButton';
 
-
-
 function WineList(props){
   const layoutStyles = {
     display: "flex",
     flexWrap: "wrap",
-    marginBottom: "140px",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    paddingBottom: "20vh",
   }
 
   const title = {
