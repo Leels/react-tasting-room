@@ -5,7 +5,7 @@
 #### This application will display basic information about a Tasting Room, including which wines are currently open for tasting in the Tasting Room, what events are occurring and which bottles are available for sale.
 
 ### Component Structure
-![component_structure](https://drive.google.com/file/d/1UU1fqPrcY3Cc6jr5tFBwfDOTzqmKn3-z/view?usp=sharing)
+![component_structure](https://raw.githubusercontent.com/Leels/react-tasting-room/master/public/componentStructure.jpg)
 
 ### Known Bugs
 #### None
