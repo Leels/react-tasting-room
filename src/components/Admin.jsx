@@ -8,24 +8,19 @@ import { Link } from 'react-router-dom';
 function Admin(props){
   const adminStyles = {
     textAlign: "center",
-    backgroundColor: "yellow"
+    color: "#990000",
+    fontStyle: "italic"
   }
   let optionalSelectedWineContent = null;
     if (props.selectedWine != null){
-      optionalSelectedWineContent =  <WineDetail selectedWine={props.selectedWine}/>;
+      optionalSelectedWineContent =  <WineDetail selectedWine={props.selectedWine} onDeletingWineFromList={props.onDeletingWineFromList}/>;
     }
   return (
     <div>
-      <h2 style={adminStyles}>Admin Account</h2>
-      <Link to="/NewWine">
-      <div class="variation-a">
-        <button class="suit_and_tie">
-    Access Admin Options</button>
-    </div>
-      </Link>
+      <h2 style={adminStyles}>Select Wine to Delete</h2>
       {optionalSelectedWineContent}
        <WineList wineList={props.wineList} currentRouterPath={props.currentRouterPath}
-       onWineSelection={props.onWineSelection}/>
+       onWineSelection={props.onWineSelection} />
     </div>
   );
 }

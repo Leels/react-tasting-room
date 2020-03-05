@@ -1,33 +1,23 @@
 
 .suit_and_tie {
-  /* font */
   color: black;
   font-size: 20px;
   font-family: helvetica;
-
-  /* remove blue underline */
   text-decoration: none;
-
-  /* border */
   border: 2px solid black;
   border-radius: 20px;
-
-  /* transitions */
   transition-duration: .2s;
   -webkit-transition-duration: .2s;
   -moz-transition-duration: .2s;
-
-  /* other */
   background-color: white;
   padding: 4px 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .suit_and_tie:hover {
-  /* update text color and background color */
   color:white;
   background-color:black;
-
-   /* transitions */
   transition-duration: .2s;
   -webkit-transition-duration: .11s;
   -moz-transition-duration: .2s;
@@ -39,7 +29,7 @@
   height: 100px;
   width: 100%;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .variation-b {

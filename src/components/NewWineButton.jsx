@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NewWineControl from './NewWineControl';
-import './NewWineButton.css'
+import './NewWineButton.css';
+import { Link } from 'react-router-dom';
 
 function NewWineButton(props){
 
@@ -15,6 +16,7 @@ return (
   <h2> What would you like to do? </h2>
   <div class="variation-a">
     <button class="suit_and_tie" onClick={props.onNewWineFormButton}>Add New Wine</button>
+    <Link to="/Admin" class="suit_and_tie">Delete Wine</Link>
   </div>
   </div>
 );

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
-import './NewWineForm.css'
+import './NewWineForm.css';
+import { Link } from 'react-router-dom';
 
 
 function NewWineForm(props){
@@ -36,7 +37,7 @@ function NewWineForm(props){
   return(
     <div style={formSize}>
     <div class="container">
-  
+
       <form onSubmit={handleNewWineFormSubmission}>
         <div class="row">
           <div class="col-25">
@@ -106,7 +107,8 @@ function NewWineForm(props){
     </div>
         <div class="row">
         <div class="variation-a">
-          <input class="suit_and_tie" value="Add New Wine" type="submit"/>
+          <input class="suit_and_tie" value="Add" type="submit"/>
+          <Link to="/" class="suit_and_tie">Home</Link>
           </div>
         </div>
       </form>

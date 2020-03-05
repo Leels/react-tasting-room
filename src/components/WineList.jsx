@@ -39,9 +39,9 @@ function WineList(props){
         cost={wine.cost}
         keywords={wine.keywords}
         pairing={wine.pairing}
-        key={wine.id}
+        id={wine.id}
         currentRouterPath={props.currentRouterPath}
-        onWineSelection={props.onWineSelection}/>
+        onWineSelection={props.onWineSelection} onDeletingWineFromList={props.onDeletingWineFromList}/>
       )}
     </div>
     </div>
