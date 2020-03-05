@@ -7,7 +7,6 @@ import White from "./images/White.png";
 import Sparkling from "./images/Sparkling.png";
 import PropTypes from 'prop-types';
 import NewWineControl from './NewWineControl';
-import NewWineButton from './NewWineButton';
 
 function WineList(props){
   const layoutStyles = {

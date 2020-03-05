@@ -10,7 +10,7 @@ import About from './components/About';
 import WineList from './components/WineList';
 import NewWineForm from './components/NewWineForm';
 import NewWineControl from './components/NewWineControl';
-import Admin from './components/Admin';
+import Delete from './components/Delete';
 import Error404 from './components/Error404';
 import { Switch, Route } from 'react-router-dom';
 import Red from "./components/images/Red.png";
@@ -200,8 +200,8 @@ class App extends React.Component {
           <Route exact path='/glasses' component={Glasses} />
           <Route exact path='/tastings' component={Tastings} />
           <Route exact path='/food' component={Food} />
-          <Route exact path='/newwine' render={()=><NewWineControl onNewWineCreation={this.handleAddingNewWineToList} />} />
-          <Route path='/admin' render={(props)=><Admin wineList={this.state.masterWineList} currentRouterPath={props.location.pathname} onWineSelection={this.handleChangingSelectedWine} selectedWine={this.state.selectedWine} onDeletingWineFromList={this.handleDeletingWineFromList}/>}/>
+          <Route exact path='/admin' render={()=><NewWineControl onNewWineCreation={this.handleAddingNewWineToList} />} />
+          <Route path='/delete' render={(props)=><Delete wineList={this.state.masterWineList} currentRouterPath={props.location.pathname} onWineSelection={this.handleChangingSelectedWine} selectedWine={this.state.selectedWine} onDeletingWineFromList={this.handleDeletingWineFromList}/>}/>
           <Route component={Error404} />
         </Switch>
       <Footer />
