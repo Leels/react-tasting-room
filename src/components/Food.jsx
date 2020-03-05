@@ -5,7 +5,7 @@ import Menu from './Menu';
 function Food(){
   const foodStyles = {
     alignItems: "center",
-    minHeight: "100vh"
+    paddingBottom: "20vh"
   }
 
   const title = {

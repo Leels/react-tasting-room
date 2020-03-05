@@ -1,5 +1,4 @@
 import React from 'react';
-import HeaderTwo from './HeaderTwo';
 import "./About.css"
 
 function About() {
@@ -11,7 +10,7 @@ function About() {
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    marginBottom: "32px",
+    marginBottom: "18vh",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",

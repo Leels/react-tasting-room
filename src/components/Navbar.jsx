@@ -20,8 +20,10 @@ function Navbar(){
     fontSize: "120%"
   }
   const linkStyles = {
-    padding: "0 8px"
+    padding: "0 8px",
+  
   }
+
   return (
     <div style={navbarStyles}>
     <div class="underline">
@@ -29,7 +31,7 @@ function Navbar(){
     </div>
     <div style={linkStyles}>
     <div class="underline">
-    <Link to="/Admin">Admin</Link>
+    <Link style={linkStyles} to="/Admin">Admin</Link>
     </div>
     </div>
     </div>

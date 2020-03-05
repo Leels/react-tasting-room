@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+import './NewWineForm.css';
+import { Link } from 'react-router-dom';
 
 
 function NewWineForm(props){
@@ -27,43 +29,91 @@ function NewWineForm(props){
   }
 
   const formSize = {
-    height: "100vh"
+    marginBottom: "20vh",
+    marginTop: "0px",
+    textAlign: "center"
   }
 
-  return (
+  return(
     <div style={formSize}>
-    <form onSubmit={handleNewWineFormSubmission}>
-    <input
-    type='text'
-    id='name'
-    placeholder="Name of Wine"
-    ref={(input) => {_name = input;}}/>
-    <input
-    type='text'
-    id='image'
-    placeholder="Wine Image"
-    ref={(input) => {_image = input;}}/>
-    <input
-    type='text'
-    id='origin'
-    placeholder="Origin"
-    ref={(input) => {_origin = input;}}/>
-    <input
-    id='price'
-    placeholder='Price'
-    ref={(input) => {_price = input;}}/>
-    <input
-    id='keywords'
-    placeholder='Keywords'
-    ref={(input) => {_keywords = input;}}/>
-    <input
-    id='pairings'
-    placeholder='Pairings'
-    ref={(input) => {_pairings = input;}}/>
-    <button type='submit'>Create</button>
-    </form>
-    </div>
+    <div class="container">
 
+      <form onSubmit={handleNewWineFormSubmission}>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name of Wine:</label>
+          </div>
+          <div class="col-75">
+          <input
+          type='text'
+          id='name'
+          ref={(input) => {_name = input;}}/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="image">Image Url:</label>
+          </div>
+          <div class="col-75">
+          <input
+          type='text'
+          id='image'
+          ref={(input) => {_image = input;}}/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="origin">Origin:</label>
+          </div>
+          <div class="col-75">
+          <input
+          type='text'
+          id='origin'
+          ref={(input) => {_origin = input;}}/>
+          </div>
+        </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="price">Price (glass/bottle):</label>
+      </div>
+      <div class="col-75">
+      <input
+      type='text'
+      id='price'
+      ref={(input) => {_price = input;}}/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="keywords">Tasting Notes:</label>
+      </div>
+      <div class="col-75">
+      <input
+      type='text'
+      id='keywords'
+      ref={(input) => {_keywords = input;}}/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pairings">Food Pairing:</label>
+      </div>
+      <div class="col-75">
+      <input
+      type='text'
+      id='pairings'
+      ref={(input) => {_pairings = input;}}/>
+      </div>
+    </div>
+        <div class="row">
+        <div class="variation-a">
+          <input class="suit_and_tie" value="Add" type="submit"/>
+          <Link to="/" class="suit_and_tie">Home</Link>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
   );
 }
 

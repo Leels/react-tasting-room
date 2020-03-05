@@ -7,17 +7,14 @@ import White from "./images/White.png";
 import Sparkling from "./images/Sparkling.png";
 import PropTypes from 'prop-types';
 import NewWineControl from './NewWineControl';
-import NewWineButton from './NewWineButton';
-
-
 
 function WineList(props){
   const layoutStyles = {
     display: "flex",
     flexWrap: "wrap",
-    marginBottom: "140px",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    paddingBottom: "20vh",
   }
 
   const title = {
@@ -41,9 +38,9 @@ function WineList(props){
         cost={wine.cost}
         keywords={wine.keywords}
         pairing={wine.pairing}
-        key={wine.id}
+        id={wine.id}
         currentRouterPath={props.currentRouterPath}
-        onWineSelection={props.onWineSelection}/>
+        onWineSelection={props.onWineSelection} onDeletingWineFromList={props.onDeletingWineFromList}/>
       )}
     </div>
     </div>

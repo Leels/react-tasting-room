@@ -1,9 +1,8 @@
 import React from 'react';
 import WineList from './WineList';
-import Admin from './Admin';
 import NewWineForm from './NewWineForm';
 import PropTypes from 'prop-types';
-import NewWineButton from './NewWineButton';
+import Admin from './Admin';
 
 
 class NewWineControl extends React.Component {
@@ -26,7 +25,7 @@ class NewWineControl extends React.Component {
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewWineForm onNewWineCreation={this.props.onNewWineCreation}/>;
     } else {
-      currentlyVisibleContent = <NewWineButton onNewWineFormButton={this.handleNewWineFormButton}/>;
+      currentlyVisibleContent = <Admin onNewWineFormButton={this.handleNewWineFormButton}/>;
     }
     return (
       <div>
